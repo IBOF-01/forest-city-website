@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>森林城市 Forest City | 马来西亚智慧生态都市</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #2c5f2d;
+            font-weight: 500;
+        }
+        .hero {
+            background: linear-gradient(135deg, #2c5f2d 0%, #4a8f4c 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero h2 {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: #2c5f2d;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            font-weight: 600;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 60px 20px;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature-card h3 {
+            color: #2c5f2d;
+            margin-bottom: 15px;
+        }
+        .section {
+            padding: 60px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #2c5f2d;
+            margin-bottom: 40px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+            padding: 40px 20px;
+            background: #f8f9fa;
+        }
+        .stat h5 {
+            font-size: 3em;
+            color: #2c5f2d;
+            margin-bottom: 10px;
+        }
+        .contact-section {
+            background: #2c5f2d;
+            color: white;
+            padding: 60px 20px;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .contact-card h3 {
+            margin-bottom: 15px;
+        }
+        .contact-card a {
+            color: white;
+            text-decoration: none;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            min-height: 100px;
+        }
+        .submit-btn {
+            background: white;
+            color: #2c5f2d;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .footer {
+            background: #1a3a1b;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="https://forest-city-sez-johor.com/wp-content/uploads/2025/08/forest-city-logo-green.png" alt="Forest City Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#location">Prime Location</a></li>
+                    <li><a href="#developer">Developer</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#layout">Layout Plan</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Your top choice for real estate investment</h1>
+        <h2>Starting from RM500k</h2>
+        <p>Includes legal fees and half of the Foreigners State Levy Consent Fee.</p>
+        <a href="#aboutus" class="btn">Explore More</a>
+        <a href="#contact" class="btn">Contact Us</a>
+    </section>
+
+    <section class="features container">
+        <div class="feature-card">
+            <h3>Exclusive MM2H</h3>
+            <p>Application Eligibility Starts from RM500k</p>
+        </div>
+        <div class="feature-card">
+            <h3>Special Financial Zone</h3>
+            <p>Malaysia's Only Location to Offer Zero Tax Rate to Family Offices</p>
+        </div>
+        <div class="feature-card">
+            <h3>Duty-Free Island</h3>
+            <p>Malaysia's First Land Vehicles Accessible Duty-Free Island</p>
+        </div>
+        <div class="feature-card">
+            <h3>Forest City Bus Routes</h3>
+            <p>Seamless Access to Johor Bahru, Checkpoints, and Singapore</p>
+        </div>
+    </section>
+
+    <section class="section" id="aboutus">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <h3 style="text-align: center; margin-bottom: 30px;">Step into a Green Smart City</h3>
+            <p style="max-width: 900px; margin: 0 auto; text-align: justify;">
+                Forest City, located in Johor, Malaysia, sits along the coastal area adjacent to the Malaysia–Singapore Second Link, offering seamless cross-border connectivity. It is a world-class smart eco-city that integrates sustainable living, international amenities, and strong investment potential.
+            </p>
+            <p style="max-width: 900px; margin: 20px auto; text-align: justify;">
+                Developed by an internationally renowned developer, Forest City is built across four man-made islands, combining green architecture, intelligent technology, and sustainable development principles. It aspires to create an international community where people and nature coexist in harmony.
+            </p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div>
+            <h5>10,000+</h5>
+            <h6>Global Homeowners & Investors</h6>
+        </div>
+        <div>
+            <h5>4</h5>
+            <h6>Eco-City Comprised of Artificial Islands</h6>
+        </div>
+        <div>
+            <h5>30+</h5>
+            <h6>Nationalities of International Homeowners</h6>
+        </div>
+        <div>
+            <h5>100%</h5>
+            <h6>Smart Security Coverage</h6>
+        </div>
+    </section>
+
+    <section class="section" id="location">
+        <div class="container">
+            <h2 class="section-title">Prime Location</h2>
+            <h3 style="text-align: center; margin-bottom: 30px;">Prime Location · Comfortable Living</h3>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+                Forest City is located in the heart of the area adjacent to the Malaysia–Singapore Second Link, offering a prime location with convenient access to key surrounding hubs
+            </p>
+            <img src="https://forest-city-sez-johor.com/wp-content/uploads/2025/08/forest-city-map-03-03-scaled.jpg" alt="Forest City Map" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Contact Us</h2>
+            <h3 style="text-align: center; margin-bottom: 40px;">Dedicated Consultant · At Your Service Anytime</h3>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Book a Consultation</h3>
+                    <p><a href="tel:+60111410476">+60 11-1410 4765</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Address</h3>
+                    <p>1, Jln Forest City - Lebuhraya Tanjung Pelepas, Forest City Pulau Satu, 81500 Pulau Satu, Johor.</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Customer Service</h3>
+                    <p><a href="mailto:rachel.forestcity@protonmail.com">rachel.forestcity@protonmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label>Name (Required)</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number (Required)</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email (Optional)</label>
+                        <input type="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Inquiry Subject (Required)</label>
+                        <select required>
+                            <option value="">Select...</option>
+                            <option>Unit Types & Pricing</option>
+                            <option>Property Viewing Appointment</option>
+                            <option>MM2H Consultation</option>
+                            <option>Finance & Tax</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="https://forest-city-sez-johor.com/wp-content/uploads/2025/08/forest-city-logo-green.png" alt="Forest City Logo" style="height: 50px; margin-bottom: 20px;">
+            <p>© 2025 Forest City Johor · Developed By Channel Soft Solutions</p>
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send/?phone=60111410476&text&type=phone_number&app_absent=0" class="whatsapp-float" target="_blank">WhatsApp Inquiry</a>
+</body>
+</html>
